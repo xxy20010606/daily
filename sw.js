@@ -1,38 +1,30 @@
-const CACHE = "briefs-v1";
-const ASSETS = [
-  "/briefs/",
-  "/briefs/index.html",
-  "/briefs/finance.html",
-  "/briefs/ai.html",
-  "/briefs/ai-apps.html",
-  "/briefs/manifest.json",
-];
+const CACHE = "briefs-v2";
 
-self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)));
-});
-
+// Network-first strategy: always try to get fresh content
+// Only use cache when device is offline
 self.addEventListener("fetch", (e) => {
   e.respondWith(
-    caches.match(e.request).then((r) => {
-      return (
-        r ||
-        fetch(e.request).then((res) => {
-          if (res.ok) {
-            const clone = res.clone();
-            caches.open(CACHE).then((c) => c.put(e.request, clone));
-          }
-          return res;
-        })
-      );
-    })
+    fetch(e.request)
+      .then((res) => {
+        // Cache the fresh response for offline use
+        if (res.ok) {
+          const clone = res.clone();
+          caches.open(CACHE).then((c) => c.put(e.request, clone));
+        }
+        return res;
+      })
+      .catch(() => {
+        // Offline fallback: return cached version
+        return caches.match(e.request);
+      })
   );
 });
 
+// Clear old caches on activation
 self.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
+      Promise.all(keys.map((k) => caches.delete(k)))
     )
   );
 });
