@@ -1,24 +1,179 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta http-equiv="Cache-Control" content="no-cache,must-revalidate"><title>💻 半导体简报 · 2026年6月24日</title>
-<style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:#f5f6fa;color:#1a1a2e;line-height:1.7;padding:16px}.container{max-width:420px;margin:0 auto}.header{background:linear-gradient(135deg,#2196f3,#1565c0);border-radius:16px;padding:24px 20px 20px;color:#fff;margin-bottom:16px;position:relative;overflow:hidden}.header::after{content:"";position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:rgba(255,255,255,0.05);border-radius:50%}.header-date{font-size:12px;color:rgba(255,255,255,0.6);letter-spacing:1px;margin-bottom:6px}.header-title{font-size:22px;font-weight:700}.header-sub{font-size:13px;color:rgba(255,255,255,0.55);margin-top:6px}.header-tag{display:inline-block;background:rgba(255,255,255,0.15);border-radius:20px;padding:3px 10px;font-size:11px;color:rgba(255,255,255,0.8);margin-top:10px}.summary-card{background:#fff;border-radius:14px;padding:16px 18px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,0.05)}.summary-title{font-size:14px;font-weight:600;color:#1a1a2e;margin-bottom:12px;display:flex;align-items:center;gap:6px}.summary-title .dot{width:6px;height:6px;border-radius:50%;background:#2196f3;flex-shrink:0}.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.summary-item{background:#f8f9fc;border-radius:10px;padding:12px;text-align:center}.summary-num{font-size:22px;font-weight:700}.summary-label{font-size:11px;color:#888;margin-top:2px}.s-red .summary-num{color:#e74c3c}.s-blue .summary-num{color:#2980b9}.s-green .summary-num{color:#27ae60}.s-orange .summary-num{color:#e67e22}
-.section{background:#fff;border-radius:14px;margin-bottom:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.05)}.section-header{padding:14px 18px 10px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f0f5}.section-icon{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}.si-1{background:#e3f2fd}.si-2{background:#ede7f6}.si-3{background:#e8f5e9}.si-4{background:#fce4ec}.section-name{font-size:15px;font-weight:700}.section-count{margin-left:auto;font-size:12px;color:#aaa}
-.news-item{padding:14px 18px;border-bottom:1px solid #f5f5fa;position:relative}.news-item:last-child{border-bottom:none}.news-index{position:absolute;left:18px;top:14px;width:20px;height:20px;border-radius:6px;background:#f0f0f5;font-size:11px;font-weight:700;color:#888;display:flex;align-items:center;justify-content:center}.news-index.on{background:#2196f3;color:#fff}.news-body{padding-left:30px}.news-title{font-size:14px;font-weight:600;color:#1a1a2e;line-height:1.5;margin-bottom:6px}.news-summary{font-size:12.5px;color:#666;line-height:1.6;margin-bottom:8px}.news-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.news-source{font-size:11px;color:#2196f3;background:#e3f2fd;border-radius:4px;padding:2px 7px}.news-link{font-size:11px;color:#aaa;text-decoration:none}.footer{text-align:center;padding:20px 0 30px;font-size:11px;color:#bbb}.footer span{color:#2196f3;font-weight:600}</style></head><body><div class="container">
-<div class="header"><div class="header-date">2026年6月24日 · 星期三</div><div class="header-title">💻 半导体简报</div><div class="header-sub">芯片技术 · 晶圆代工 · EDA · 国产替代</div><div class="header-tag">由 WorkBuddy AI 自动整理</div></div>
-<div class="summary-card"><div class="summary-title"><span class="dot"></span> 今日概览</div><div class="summary-grid"><div class="summary-item s-blue"><div class="summary-num">2</div><div class="summary-label">政策与产业</div></div><div class="summary-item s-orange"><div class="summary-num">2</div><div class="summary-label">技术与产品</div></div><div class="summary-item s-green"><div class="summary-num">2</div><div class="summary-label">企业动态</div></div><div class="summary-item s-red"><div class="summary-num">2</div><div class="summary-label">投融资与IPO</div></div></div></div>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>💻 半导体简报 · 2026年06月24日</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:#f5f6fa;color:#1a1a2e;line-height:1.7;padding:16px}
+.container{max-width:420px;margin:0 auto}
+.header{background:linear-gradient(135deg,#2196f3, #1565c0);border-radius:16px;padding:24px 20px 20px;color:#fff;margin-bottom:16px;position:relative;overflow:hidden}
+.header::after{content:"";position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:rgba(255,255,255,0.05);border-radius:50%}
+.header-date{font-size:12px;color:rgba(255,255,255,0.6);letter-spacing:1px;margin-bottom:6px}
+.header-title{font-size:22px;font-weight:700;letter-spacing:1px}
+.header-sub{font-size:13px;color:rgba(255,255,255,0.55);margin-top:6px}
+.header-tag{display:inline-block;background:rgba(255,255,255,0.15);border-radius:20px;padding:3px 10px;font-size:11px;color:rgba(255,255,255,0.8);margin-top:10px}
+.summary-card{background:#fff;border-radius:14px;padding:16px 18px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,0.05)}
+.summary-title{font-size:14px;font-weight:600;color:#1a1a2e;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.summary-title .dot{width:6px;height:6px;border-radius:50%;background:#2196f3;flex-shrink:0}
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.summary-item{background:#f8f9fc;border-radius:10px;padding:12px;text-align:center}
+.summary-num{font-size:22px;font-weight:700;color:#1a1a2e}
+.summary-label{font-size:11px;color:#888;margin-top:2px}
+.summary-item.red .summary-num{color:#e74c3c}
+.summary-item.blue .summary-num{color:#2980b9}
+.summary-item.green .summary-num{color:#27ae60}
+.summary-item.orange .summary-num{color:#e67e22}
+.section{background:#fff;border-radius:14px;margin-bottom:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.05)}
+.section-header{padding:14px 18px 10px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f0f5}
+.section-icon{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.section-icon.policy{background:#fff3e0}
+.section-icon.market{background:#e3f2fd}
+.section-icon.pe{background:#fce4ec}
+.section-icon.model{background:#ede7f6}
+.section-icon.app{background:#e8f5e9}
+.section-icon.capital{background:#fce4ec}
+.section-icon.tool{background:#e8f5e9}
+.section-icon.case{background:#e3f2fd}
+.section-icon.agent{background:#ede7f6}
+.section-icon.biz{background:#fff3e0}
+.section-name{font-size:15px;font-weight:700;color:#1a1a2e}
+.section-count{margin-left:auto;font-size:12px;color:#aaa}
+.news-item{padding:14px 18px;border-bottom:1px solid #f5f5fa;position:relative}
+.news-item:last-child{border-bottom:none}
+.news-index{position:absolute;left:18px;top:14px;width:20px;height:20px;border-radius:6px;background:#f0f0f5;font-size:11px;font-weight:700;color:#888;display:flex;align-items:center;justify-content:center}
+.news-index.active{background:#2196f3;color:#fff}
+.news-body{padding-left:30px}
+.news-title{font-size:14px;font-weight:600;color:#1a1a2e;line-height:1.5;margin-bottom:6px}
+.news-summary{font-size:12.5px;color:#666;line-height:1.6;margin-bottom:8px}
+.news-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.news-source{font-size:11px;color:#2196f3;background:rgba(33,150,243,33,150,243,0.1);border-radius:4px;padding:2px 7px}
+.news-link{font-size:11px;color:#aaa;text-decoration:none;word-break:break-all}
+.news-link:hover{color:#2196f3}
+.footer{text-align:center;padding:20px 0 30px;font-size:11px;color:#bbb}
+.footer span{color:#2196f3;font-weight:600}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="header-date">2026年06月24日</div>
+<div class="header-title">💻 半导体简报</div>
+<div class="header-sub">芯片技术 · 晶圆代工 · EDA · 国产替代</div>
+<div class="header-tag">由 WorkBuddy AI · GitHub Actions 自动整理</div>
+</div>
+<div class="summary-card">
+<div class="summary-title"><span class="dot"></span> 今日概览</div>
+<div class="summary-grid"><div class="summary-item red"><div class="summary-num">2</div><div class="summary-label">政策与产业</div></div><div class="summary-item blue"><div class="summary-num">2</div><div class="summary-label">技术与产品</div></div><div class="summary-item green"><div class="summary-num">2</div><div class="summary-label">企业动态</div></div><div class="summary-item orange"><div class="summary-num">1</div><div class="summary-label">投融资与IPO</div></div></div>
+</div>
 
-<div class="section"><div class="section-header"><div class="section-icon si-1">📋</div><div class="section-name">政策与产业</div><div class="section-count">2 条</div></div>
-<div class="news-item"><div class="news-index on">1</div><div class="news-body"><div class="news-title">半导体全产业链涨价蔓延：意法半导体MCU年内二度提价</div><div class="news-summary">意法半导体通知客户6月28日起MCU再次涨价，为年内第二次调价。德州仪器、恩智浦、英飞凌等同步跟涨，成熟制程产能持续紧张。</div><div class="news-meta"><span class="news-source">全球半导体观察</span><a class="news-link" href="https://www.dramx.com/News/igbt/20260624-40664.html">查看原文</a></div></div></div>
-<div class="news-item"><div class="news-index">2</div><div class="news-body"><div class="news-title">存储芯片涨价失控：Q2 DRAM合约价暴涨63%，NAND涨75%</div><div class="news-summary">TrendForce最新数据，Q2一般型DRAM合约价季增58-63%、NAND季增70-75%，DDR5一年内最高涨627%。手机厂商集体提价应对成本压力。</div><div class="news-meta"><span class="news-source">东方财富网</span><a class="news-link" href="https://caifuhao.eastmoney.com/news/1729390002">查看原文</a></div></div></div></div>
-
-<div class="section"><div class="section-header"><div class="section-icon si-2">🔬</div><div class="section-name">技术与产品</div><div class="section-count">2 条</div></div>
-<div class="news-item"><div class="news-index on">3</div><div class="news-body"><div class="news-title">英特尔获谷歌300万颗TPU代工大单，芯片代工格局生变</div><div class="news-summary">谷歌向英特尔下单超300万颗自研TPU芯片，交付周期覆盖至2028年。英特尔晶圆代工业务获重大突破，挑战台积电垄断格局。</div><div class="news-meta"><span class="news-source">腾讯科技</span><a class="news-link" href="https://news.qq.com/rain/a/20260609A04KSU00">查看原文</a></div></div></div>
-<div class="news-item"><div class="news-index">4</div><div class="news-body"><div class="news-title">国产AI芯片市占率首破50%：华为昇腾领跑，英伟达份额萎缩</div><div class="news-summary">IDC报告显示Q1国产AI芯片国内市场份额达52.3%，华为昇腾独占鳌头，英伟达在华份额从三年前95%暴跌至8%，算力自主化里程碑。</div><div class="news-meta"><span class="news-source">IT之家</span><a class="news-link" href="https://www.toutiao.com/article/7636898399908659755/">查看原文</a></div></div></div></div>
-
-<div class="section"><div class="section-header"><div class="section-icon si-3">🏢</div><div class="section-name">企业动态</div><div class="section-count">2 条</div></div>
-<div class="news-item"><div class="news-index on">5</div><div class="news-body"><div class="news-title">台积电Q1晶圆代工市占率攀升至72.3%，AI订单占比持续提升</div><div class="news-summary">TrendForce数据，Q1全球前十大晶圆代工厂营收479.5亿美元。台积电以358.6亿美元领跑、市占率72.3%，中芯国际产能利用率维持高位。</div><div class="news-meta"><span class="news-source">腾讯科技</span><a class="news-link" href="https://news.qq.com/rain/a/20260613A04PJ000">查看原文</a></div></div></div>
-<div class="news-item"><div class="news-index">6</div><div class="news-body"><div class="news-title">基本半导体通过港交所聆讯，冲刺"中国碳化硅芯片第一股"</div><div class="news-summary">深圳基本半导体6月21日通过港交所聆讯，采用18C特专科技通道。2025年营收3.11亿、碳化硅功率模块本土第三，三年研发投入占比超30%。</div><div class="news-meta"><span class="news-source">新浪财经</span><a class="news-link" href="https://baijiahao.baidu.com/s?id=1868655283154337286">查看原文</a></div></div></div></div>
-
-<div class="section"><div class="section-header"><div class="section-icon si-4">💰</div><div class="section-name">投融资与IPO</div><div class="section-count">2 条</div></div>
-<div class="news-item"><div class="news-index on">7</div><div class="news-body"><div class="news-title">长鑫科技295亿IPO正式获批，2026年A股最大IPO落地</div><div class="news-summary">证监会批复长鑫科技科创板IPO，拟募295亿元，国产DRAM唯一IDM龙头登陆资本市场。30余家A股供应链企业将获持续订单红利。</div><div class="news-meta"><span class="news-source">凤凰网财经</span><a class="news-link" href="https://finance.ifeng.com/c/8u650YRqlEK">查看原文</a></div></div></div>
-<div class="news-item"><div class="news-index">8</div><div class="news-body"><div class="news-title">燧原科技、粤芯半导体同日过会，合计拟募资135亿元</div><div class="news-summary">6月15日，燧原科技（云端AI芯片）与粤芯半导体（12英寸晶圆代工）双双IPO过会，合计募资135亿。"国产GPU四小龙"首次在资本市场聚齐。</div><div class="news-meta"><span class="news-source">新浪财经</span><a class="news-link" href="http://finance.sina.com.cn/wm/2026-06-16/doc-inicpvuc7862750.shtml">查看原文</a></div></div></div></div>
-
-<div class="footer">由 <span>WorkBuddy AI</span> 自动整理 · 仅供参考<br>2026年6月24日 10:20 更新</div></div></body></html>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon policy">📋</div>
+      <div class="section-name">政策与产业</div>
+      <div class="section-count">2 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index active">1</div>
+      <div class="news-body">
+        <div class="news-title">Pragmatic半导体推出Pragmatic NFC Protect</div>
+        <div class="news-summary">Pragmatic半导体发布Pragmatic NFC Protect PR1311，一款集成即时篡...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/newsflashes/3866753968247817?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-index active">2</div>
+      <div class="news-body">
+        <div class="news-title">主题圆桌: 迎风而立的人，那些漂洋过海寻找的答案｜36氪WAVES2026新浪潮</div>
+        <div class="news-summary">&amp;nbsp;“2026年，创投圈的浪潮再次翻涌：AI从技术概念走进产业深水区，硬科技创业从‘小众赛道...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3866622738060553?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon model">🔬</div>
+      <div class="section-name">技术与产品</div>
+      <div class="section-count">2 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">3</div>
+      <div class="news-body">
+        <div class="news-title">仙工智能的过山车：暗盘破发7%、首日冲高38%</div>
+        <div class="news-summary">本文约1100字，建议阅读3分钟 作者&amp;nbsp;|&amp;nbsp;彭孝秋 6月24日，仙工智能（061...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3866666733835522?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">4</div>
+      <div class="news-body">
+        <div class="news-title">主题演讲：全密态计算，破解AI时代的数据安全难题 | 36氪WAVES2026新浪潮</div>
+        <div class="news-summary">“2026年，创投圈的浪潮再次翻涌：AI从技术概念走进产业深水区，硬科技创业从“小众赛道” 变成“主...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3866604451845377?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon case">🏢</div>
+      <div class="section-name">企业动态</div>
+      <div class="section-count">2 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">5</div>
+      <div class="news-body">
+        <div class="news-title">英伟达压PCB降价10%？胜宏科技：公司经营一切正常，客户方案调整是正常现象</div>
+        <div class="news-summary">6月23日，算力链的PCB板块大跌，该板块概念龙头胜宏科技单日重挫逾7%。据上海证券报报道，PCB整...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/newsflashes/3866762464334849?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">6</div>
+      <div class="news-body">
+        <div class="news-title">微信AI助手小微，还有许多做不到的事情｜产品观察</div>
+        <div class="news-summary">文｜王毓婵 编辑｜张雨忻 微信AI助手“小微”正在灰度内测，36氪智能涌现拿到了首批测试资格。 先说...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3865425714795525?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon capital">💰</div>
+      <div class="section-name">投融资与IPO</div>
+      <div class="section-count">1 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">7</div>
+      <div class="news-body">
+        <div class="news-title">AI × OPC的新可能：一个人，就是一支队伍｜2026WAVES</div>
+        <div class="news-summary">2026年6月16日，36氪2026 WAVES 新浪潮大会在广州番禺良仓新造创意园开幕。以下这场圆...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3866649515938825?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="footer">由 <span>WorkBuddy AI</span> 自动整理 · 仅供参考<br>2026年06月24日 05:58 更新</div>
+</div>
+</body>
+</html>
