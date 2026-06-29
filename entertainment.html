@@ -2,191 +2,89 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>🎬 娱乐简报 · 2026年6月29日</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>娱乐简报 - 2026年6月29日</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:#f5f6fa;color:#1a1a2e;line-height:1.7;padding:16px}
-.container{max-width:420px;margin:0 auto}
-.header{background:linear-gradient(135deg,#e91e63,#c2185b);border-radius:16px;padding:24px 20px 20px;color:#fff;margin-bottom:16px;position:relative;overflow:hidden}
-.header::after{content:"";position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:rgba(255,255,255,0.05);border-radius:50%}
-.header-date{font-size:12px;color:rgba(255,255,255,0.6);letter-spacing:1px;margin-bottom:6px}
-.header-title{font-size:22px;font-weight:700;letter-spacing:1px}
-.header-sub{font-size:13px;color:rgba(255,255,255,0.55);margin-top:6px}
-.header-tag{display:inline-block;background:rgba(255,255,255,0.15);border-radius:20px;padding:3px 10px;font-size:11px;color:rgba(255,255,255,0.8);margin-top:10px}
-.summary-card{background:#fff;border-radius:14px;padding:16px 18px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,0.05)}
-.summary-title{font-size:14px;font-weight:600;color:#1a1a2e;margin-bottom:12px;display:flex;align-items:center;gap:6px}
-.summary-title .dot{width:6px;height:6px;border-radius:50%;background:#e91e63;flex-shrink:0}
-.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.summary-item{background:#f8f9fc;border-radius:10px;padding:12px;text-align:center}
-.summary-num{font-size:22px;font-weight:700;color:#1a1a2e}
-.summary-label{font-size:11px;color:#888;margin-top:2px}
-.summary-item.red .summary-num{color:#e74c3c}
-.summary-item.blue .summary-num{color:#2980b9}
-.summary-item.orange .summary-num{color:#e67e22}
-.summary-item.green .summary-num{color:#27ae60}
-.section{background:#fff;border-radius:14px;margin-bottom:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.05)}
-.section-header{padding:14px 18px 10px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f0f5}
-.section-icon{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
-.section-icon.movie{background:#fce4ec}
-.section-icon.music{background:#e8eaf6}
-.section-icon.star{background:#fff3e0}
-.section-icon.game{background:#e8f5e9}
-.section-name{font-size:15px;font-weight:700;color:#1a1a2e}
-.section-count{margin-left:auto;font-size:12px;color:#aaa}
-.news-item{padding:14px 18px;border-bottom:1px solid #f5f5fa;position:relative}
-.news-item:last-child{border-bottom:none}
-.news-index{position:absolute;left:18px;top:14px;width:20px;height:20px;border-radius:6px;background:#f0f0f5;font-size:11px;font-weight:700;color:#888;display:flex;align-items:center;justify-content:center}
-.news-index.active{background:#e91e63;color:#fff}
-.news-body{padding-left:30px}
-.news-title{font-size:14px;font-weight:600;color:#1a1a2e;line-height:1.5;margin-bottom:6px}
-.news-summary{font-size:12.5px;color:#666;line-height:1.6;margin-bottom:8px}
-.news-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.news-source{font-size:11px;color:#e91e63;background:rgba(233,30,99,0.08);border-radius:4px;padding:2px 7px}
-.news-link{font-size:11px;color:#aaa;text-decoration:none}
-.footer{text-align:center;padding:20px 0 30px;font-size:11px;color:#bbb}
-.footer span{color:#e91e63;font-weight:600}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB",sans-serif;background:#f5f6fa;color:#2c3e50;line-height:1.6}
+.header{background:linear-gradient(135deg,#e67e22,#d35400);color:#fff;padding:28px 20px;text-align:center}
+.header h1{font-size:26px;margin-bottom:6px}
+.header span{font-size:14px;opacity:.85}
+.container{max-width:800px;margin:20px auto;padding:0 16px}
+.card{background:#fff;border-radius:12px;padding:20px 24px;margin-bottom:14px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-left:4px solid #e67e22}
+.card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.1);transform:translateY(-1px);transition:all .2s}
+.card h2{font-size:17px;color:#d35400;margin-bottom:8px}
+.card p{font-size:14px;color:#555}
+.tag{display:inline-block;background:#e67e22;color:#fff;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:6px}
+.footer{text-align:center;padding:24px;font-size:12px;color:#999}
+.footer a{color:#e67e22;text-decoration:none}
+.summary-box{background:linear-gradient(135deg,#fff9f0,#fff3e0);border:1px solid #ffcc80;border-radius:12px;padding:16px 20px;margin-bottom:18px}
+.summary-box h3{font-size:15px;color:#d35400;margin-bottom:8px}
+.summary-box ul{list-style:none}
+.summary-box li{font-size:13px;color:#555;padding:3px 0;padding-left:16px;position:relative}
+.summary-box li::before{content:"▸";position:absolute;left:0;color:#e67e22}
 </style>
 </head>
 <body>
-<div class="container">
 <div class="header">
-<div class="header-date">2026年6月29日 星期一</div>
-<div class="header-title">🎬 娱乐简报</div>
-<div class="header-sub">影视综艺 · 音乐明星 · 游戏电竞 · 热点</div>
-<div class="header-tag">由 WorkBuddy AI 自动整理</div>
+<h1>🎬 每日娱乐简报</h1>
+<span>2026年6月29日 星期一</span>
 </div>
-<div class="summary-card">
-<div class="summary-title"><span class="dot"></span> 今日概览</div>
-<div class="summary-grid">
-<div class="summary-item red"><div class="summary-num">3</div><div class="summary-label">影视动态</div></div>
-<div class="summary-item blue"><div class="summary-num">2</div><div class="summary-label">音乐综艺</div></div>
-<div class="summary-item orange"><div class="summary-num">1</div><div class="summary-label">明星热点</div></div>
-<div class="summary-item green"><div class="summary-num">2</div><div class="summary-label">游戏电竞</div></div>
-</div>
+<div class="container">
+
+<div class="summary-box">
+<h3>📌 今日速览</h3>
+<ul>
+<li>暑期档票房破15亿！《给阿嬷的情书》4.89亿领跑，《四渡》上映3天破7000万</li>
+<li>近80部中外影片暑期上映，革命历史、科幻、喜剧、动画百花齐放</li>
+<li>迪丽热巴新商务官宣，金晨进组电影《无孔不入》</li>
+<li>内娱剧综暑期预热全面打响，多部重磅作品轮番定档</li>
+</ul>
 </div>
 
-<div class="section">
-<div class="section-header">
-<div class="section-icon movie">🎥</div>
-<div class="section-name">影视动态</div>
-<div class="section-count">3 条</div>
-</div>
-<div class="news-item">
-<div class="news-index active">1</div>
-<div class="news-body">
-<div class="news-title">暑期档票房破15亿，《四渡》蝉联单日冠军，近80部影片集结</div>
-<div class="news-summary">截至6月28日暑期档票房突破15亿元，《四渡》上映3日观影超211万人，连续保持单日票房冠军。</div>
-<div class="news-meta">
-<span class="news-source">财联社</span>
-<a class="news-link" href="https://xueqiu.com/7437424816/397185091">查看原文</a>
-</div>
-</div>
-</div>
-<div class="news-item">
-<div class="news-index active">2</div>
-<div class="news-body">
-<div class="news-title">第31届白玉兰奖揭晓：于和伟二封视帝，杨紫成首位90后视后</div>
-<div class="news-summary">《太平年》获最佳中国电视剧，于和伟凭《沉默的荣耀》二度称帝，杨紫凭《生命树》封后创造历史。</div>
-<div class="news-meta">
-<span class="news-source">新浪娱乐</span>
-<a class="news-link" href="https://ent.sina.cn/2026-06-27/detail-inievzuq4596803.d.html">查看原文</a>
-</div>
-</div>
-</div>
-<div class="news-item">
-<div class="news-index">3</div>
-<div class="news-body">
-<div class="news-title">《四渡》上映口碑持续发酵，献礼长征胜利90周年</div>
-<div class="news-summary">重大革命历史题材影片《四渡》全程贵州实景拍摄，上映首日票房2885万，跻身6月票房前列。</div>
-<div class="news-meta">
-<span class="news-source">湖北日报</span>
-<a class="news-link" href="https://baijiahao.baidu.com/s?id=1869145242239987597">查看原文</a>
-</div>
-</div>
-</div>
+<div class="card">
+<h2><span class="tag">票房</span> 暑期档票房突破15亿，《给阿嬷的情书》领跑</h2>
+<p>据网络平台数据，截至目前，2026年暑期档（6月1日-8月31日）电影总票房（含预售）突破15亿元。票房排行：《给阿嬷的情书》4.89亿元、《火遮眼》1.91亿元、《玩具总动员5》1.86亿元、《抓特务》9394万元、《消失的人》7904万元。近80部中外影片将在暑期档上映，涵盖革命历史、科幻、喜剧、动画等多元类型。</p>
 </div>
 
-<div class="section">
-<div class="section-header">
-<div class="section-icon music">🎵</div>
-<div class="section-name">音乐与综艺</div>
-<div class="section-count">2 条</div>
-</div>
-<div class="news-item">
-<div class="news-index active">4</div>
-<div class="news-body">
-<div class="news-title">《乘风2026》总决赛收官：曾沛慈夺冠，12人成团名单揭晓</div>
-<div class="news-summary">6月27日总决选落幕，曾沛慈获年度总冠军，张月获年度队长，全开麦无修音直播引爆全网热搜。</div>
-<div class="news-meta">
-<span class="news-source">腾讯新闻</span>
-<a class="news-link" href="https://news.qq.com/rain/a/20260628A072IW00">查看原文</a>
-</div>
-</div>
-</div>
-<div class="news-item">
-<div class="news-index">5</div>
-<div class="news-body">
-<div class="news-title">《歌手2026》第六期：万妮达拿下第一，苏醒接班那英任串讲人</div>
-<div class="news-summary">万妮达袭榜赛守榜成功勇夺第一，那英主持4期后离开，苏醒接棒成为新特邀串讲人。</div>
-<div class="news-meta">
-<span class="news-source">搜狐娱乐</span>
-<a class="news-link" href="https://www.sohu.com/a/1037778465_121164935">查看原文</a>
-</div>
-</div>
-</div>
+<div class="card">
+<h2><span class="tag">新片</span> 重大革命历史题材《四渡》上映3天破7000万</h2>
+<p>重大革命历史题材电影《四渡》6月26日起全国上映，上映仅3天票房突破7080万元。影片以红军长征中的四渡赤水战役为核心，再现中央红军在敌军重兵围堵之下以少胜多、扭转战局的军事奇迹，向红军长征胜利90周年致敬。《我们的名字》根据真实事迹改编，讲述人民警察英勇故事，同样引发观众强烈共鸣。</p>
 </div>
 
-<div class="section">
-<div class="section-header">
-<div class="section-icon star">⭐</div>
-<div class="section-name">明星与热点</div>
-<div class="section-count">1 条</div>
-</div>
-<div class="news-item">
-<div class="news-index active">6</div>
-<div class="news-body">
-<div class="news-title">白玉兰红毯群星闪耀：肖战杨紫同框引回忆杀，张凌赫关晓彤串场</div>
-<div class="news-summary">第31届白玉兰奖红毯星光熠熠，肖战杨紫再同框掀起《余生》回忆，张凌赫关晓彤担任串场嘉宾。</div>
-<div class="news-meta">
-<span class="news-source">搜狐娱乐</span>
-<a class="news-link" href="https://www.sohu.com/a/1042563765_121983867">查看原文</a>
-</div>
-</div>
-</div>
+<div class="card">
+<h2><span class="tag">热剧</span> 6月热播剧榜单：网剧与上星剧两极出彩</h2>
+<p>2026年6月影视剧集竞争激烈，网剧与上星剧各凭实力领跑榜单。网剧《圣女逃天》凭借硬核剧情和精良制作占据网络热度榜首，多部古装剧、悬疑剧同步上线。暑期剧综预热大战正式打响，古装、院线、剧集赛道百花齐放，多部重磅作品轮番官宣，承前启后开启暑期档内容竞争新格局。</p>
 </div>
 
-<div class="section">
-<div class="section-header">
-<div class="section-icon game">🎮</div>
-<div class="section-name">游戏与电竞</div>
-<div class="section-count">2 条</div>
-</div>
-<div class="news-item">
-<div class="news-index active">7</div>
-<div class="news-body">
-<div class="news-title">MSI 2026韩国大田开赛！BLG与TES代表LPL出征</div>
-<div class="news-summary">英雄联盟季中冠军赛6月28日在大田开幕，11支队伍争锋，LPL双雄直入淘汰赛，BLG或首轮遇T1。</div>
-<div class="news-meta">
-<span class="news-source">腾讯新闻</span>
-<a class="news-link" href="https://news.qq.com/rain/a/20260615A098V300">查看原文</a>
-</div>
-</div>
-</div>
-<div class="news-item">
-<div class="news-index">8</div>
-<div class="news-body">
-<div class="news-title">《黑神话：悟空》全球销量破3000万，官宣参展上海BW漫展</div>
-<div class="news-summary">黑神话全球累计销量超3000万份，海外贡献过半；7月10日参展上海BW，1:1天命人雕像限时亮相。</div>
-<div class="news-meta">
-<span class="news-source">新浪科技</span>
-<a class="news-link" href="https://finance.sina.com.cn/tech/roll/2026-06-26/doc-inietfxy2053772.shtml">查看原文</a>
-</div>
-</div>
-</div>
+<div class="card">
+<h2><span class="tag">明星</span> 迪丽热巴德佑全球代言即将官宣</h2>
+<p>迪丽热巴的德佑全球品牌代言人商务即将官宣，物料已拍摄完成。金晨已确认6月进组电影《无孔不入》，主演阵容包括刘浩存、彭昱畅。多家品牌在暑期档密集启动明星商务合作，代言市场热度持续攀升。微博电影之夜等年度盛事也在紧锣密鼓筹备中。</p>
 </div>
 
-<div class="footer">由 <span>WorkBuddy AI</span> 自动整理 · 仅供参考<br>2026年6月29日 10:27 更新</div>
+<div class="card">
+<h2><span class="tag">综艺</span> 暑期综艺大战一触即发</h2>
+<p>综艺《开始奏乐开始舞》拟邀常驻嘉宾张星特、余佳运、周震南，拟邀飞行嘉宾代旭、井胧、井迪、张颜齐、姚晓棠、刘宇、闫桉，阵容引发广泛期待。多档音乐、竞技、生活类综艺陆续官宣暑期档排期，娱乐内容供给端迎来全年最密集窗口。</p>
+</div>
+
+<div class="card">
+<h2><span class="tag">趋势</span> 短视频+影视联动成暑期新玩法</h2>
+<p>2026暑期档呈现出短视频平台与影视内容深度联动的新趋势。多部电影通过短视频二创、明星直播互动、话题挑战赛等形式进行宣发，打破了传统电影营销的边界。与此同时，影视OST在音乐平台的联动推广也成为标配，内容生态的全链路打通让"观影+听歌+互动"成为年轻用户的消费闭环。</p>
+</div>
+
+<div class="card">
+<h2><span class="tag">国际</span> DC新作同步北美上映，中日韩动画同档竞技</h2>
+<p>暑期档中外影片同场竞技格外激烈。DC超级英雄新作确认同步北美在国内上映，好莱坞动画续集《玩具总动员5》表现稳健。多部中日韩合拍动画电影也将在暑期档集中亮相，二次元赛道成为增量战场。中国动画电影工业化水平持续提升，国产原创IP开始在全球市场崭露头角。</p>
+</div>
+
+<div class="card">
+<h2><span class="tag">游戏</span> 2026世界杯联动娱乐，游戏+体育跨界融合加速</h2>
+<p>正值2026年世界杯热潮，游戏与体育的跨界联动成为6月娱乐市场一大亮点。多家游戏厂商推出世界杯主题限定活动，EA Sports FC等体育游戏热度飙升。同时，线下娱乐消费也在暑期全面回暖，剧本杀、沉浸式剧场、主题乐园等线下娱乐业态迎来客流高峰。</p>
+</div>
+
+</div>
+<div class="footer">
+由 <a href="https://github.com/xxy20010606/daily" target="_blank">WorkBuddy AI</a> 驱动 · 每日10:00自动更新 · <a href="history.html">历史存档</a>
 </div>
 </body>
 </html>
