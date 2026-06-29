@@ -2,89 +2,178 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>新能源简报 - 2026年6月29日</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>⚡ 新能源简报 · 2026年06月29日</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB",sans-serif;background:#f5f6fa;color:#2c3e50;line-height:1.6}
-.header{background:linear-gradient(135deg,#27ae60,#1e8449);color:#fff;padding:28px 20px;text-align:center}
-.header h1{font-size:26px;margin-bottom:6px}
-.header span{font-size:14px;opacity:.85}
-.container{max-width:800px;margin:20px auto;padding:0 16px}
-.card{background:#fff;border-radius:12px;padding:20px 24px;margin-bottom:14px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-left:4px solid #27ae60}
-.card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.1);transform:translateY(-1px);transition:all .2s}
-.card h2{font-size:17px;color:#1e8449;margin-bottom:8px}
-.card p{font-size:14px;color:#555}
-.tag{display:inline-block;background:#27ae60;color:#fff;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:6px}
-.footer{text-align:center;padding:24px;font-size:12px;color:#999}
-.footer a{color:#27ae60;text-decoration:none}
-.summary-box{background:linear-gradient(135deg,#f0fff4,#e6ffed);border:1px solid #b7ebc9;border-radius:12px;padding:16px 20px;margin-bottom:18px}
-.summary-box h3{font-size:15px;color:#1e8449;margin-bottom:8px}
-.summary-box ul{list-style:none}
-.summary-box li{font-size:13px;color:#555;padding:3px 0;padding-left:16px;position:relative}
-.summary-box li::before{content:"▸";position:absolute;left:0;color:#27ae60}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:#f5f6fa;color:#1a1a2e;line-height:1.7;padding:16px}
+.container{max-width:420px;margin:0 auto}
+.header{background:linear-gradient(135deg,#e67e22, #d35400);border-radius:16px;padding:24px 20px 20px;color:#fff;margin-bottom:16px;position:relative;overflow:hidden}
+.header::after{content:"";position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:rgba(255,255,255,0.05);border-radius:50%}
+.header-date{font-size:12px;color:rgba(255,255,255,0.6);letter-spacing:1px;margin-bottom:6px}
+.header-title{font-size:22px;font-weight:700;letter-spacing:1px}
+.header-sub{font-size:13px;color:rgba(255,255,255,0.55);margin-top:6px}
+.header-tag{display:inline-block;background:rgba(255,255,255,0.15);border-radius:20px;padding:3px 10px;font-size:11px;color:rgba(255,255,255,0.8);margin-top:10px}
+.summary-card{background:#fff;border-radius:14px;padding:16px 18px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,0.05)}
+.summary-title{font-size:14px;font-weight:600;color:#1a1a2e;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.summary-title .dot{width:6px;height:6px;border-radius:50%;background:#e67e22;flex-shrink:0}
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.summary-item{background:#f8f9fc;border-radius:10px;padding:12px;text-align:center}
+.summary-num{font-size:22px;font-weight:700;color:#1a1a2e}
+.summary-label{font-size:11px;color:#888;margin-top:2px}
+.summary-item.red .summary-num{color:#e74c3c}
+.summary-item.blue .summary-num{color:#2980b9}
+.summary-item.green .summary-num{color:#27ae60}
+.summary-item.orange .summary-num{color:#e67e22}
+.section{background:#fff;border-radius:14px;margin-bottom:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.05)}
+.section-header{padding:14px 18px 10px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f0f5}
+.section-icon{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.section-icon.policy{background:#fff3e0}
+.section-icon.market{background:#e3f2fd}
+.section-icon.pe{background:#fce4ec}
+.section-icon.model{background:#ede7f6}
+.section-icon.app{background:#e8f5e9}
+.section-icon.capital{background:#fce4ec}
+.section-icon.tool{background:#e8f5e9}
+.section-icon.case{background:#e3f2fd}
+.section-icon.agent{background:#ede7f6}
+.section-icon.biz{background:#fff3e0}
+.section-name{font-size:15px;font-weight:700;color:#1a1a2e}
+.section-count{margin-left:auto;font-size:12px;color:#aaa}
+.news-item{padding:14px 18px;border-bottom:1px solid #f5f5fa;position:relative}
+.news-item:last-child{border-bottom:none}
+.news-index{position:absolute;left:18px;top:14px;width:20px;height:20px;border-radius:6px;background:#f0f0f5;font-size:11px;font-weight:700;color:#888;display:flex;align-items:center;justify-content:center}
+.news-index.active{background:#e67e22;color:#fff}
+.news-body{padding-left:30px}
+.news-title{font-size:14px;font-weight:600;color:#1a1a2e;line-height:1.5;margin-bottom:6px}
+.news-summary{font-size:12.5px;color:#666;line-height:1.6;margin-bottom:8px}
+.news-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.news-source{font-size:11px;color:#e67e22;background:rgba(230,126,34,230,126,34,0.1);border-radius:4px;padding:2px 7px}
+.news-link{font-size:11px;color:#aaa;text-decoration:none;word-break:break-all}
+.news-link:hover{color:#e67e22}
+.footer{text-align:center;padding:20px 0 30px;font-size:11px;color:#bbb}
+.footer span{color:#e67e22;font-weight:600}
 </style>
 </head>
 <body>
-<div class="header">
-<h1>⚡ 每日新能源简报</h1>
-<span>2026年6月29日 星期一</span>
-</div>
 <div class="container">
-
-<div class="summary-box">
-<h3>📌 今日速览</h3>
-<ul>
-<li>比亚迪6月冲刺半年度目标，预计销量显著环比提升</li>
-<li>特斯拉单周交付1.74万台，环比激增48.7%，上海工厂满负荷运转</li>
-<li>SNEC 2026：液冷储能技术全面爆发，光储融合进入"系统级"时代</li>
-<li>2026新型能源占一次能源消费比重目标提升至25%</li>
-</ul>
+<div class="header">
+<div class="header-date">2026年06月29日</div>
+<div class="header-title">⚡ 新能源简报</div>
+<div class="header-sub">光伏风电 · 储能电池 · 电动车 · 碳中和</div>
+<div class="header-tag">由 WorkBuddy AI · GitHub Actions 自动整理</div>
+</div>
+<div class="summary-card">
+<div class="summary-title"><span class="dot"></span> 今日概览</div>
+<div class="summary-grid"><div class="summary-item red"><div class="summary-num">2</div><div class="summary-label">政策与市场</div></div><div class="summary-item blue"><div class="summary-num">2</div><div class="summary-label">产业链动态</div></div><div class="summary-item green"><div class="summary-num">1</div><div class="summary-label">企业动态</div></div><div class="summary-item orange"><div class="summary-num">2</div><div class="summary-label">投融资与出海</div></div></div>
 </div>
 
-<div class="card">
-<h2><span class="tag">比亚迪</span> 半年度冲量：6月销量预计环比显著提升</h2>
-<p>比亚迪6月正值半年度考核节点，叠加618促销及政策窗口期，经销商加大折扣回笼业绩。新款车型大唐EV等开始大规模交付，预计单月贡献增量约2万辆。海外工厂持续扩张，5月实际销量38.3万辆，6月预计实现显著环比提升。上半年累计销量有望突破200万辆。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">特斯拉</span> 单周零售交付1.74万台，环比涨幅48.7%</h2>
-<p>特斯拉2026年6月15日至21日单周零售交付1.74万台，对比6月第二周环比涨幅高达48.7%。上海超级工厂全线满负荷排产，车身冲压、电池装配、整车总装三条产线实行两班倒生产制度。临港零部件配套园区同步全负荷运转，零部件到货节奏加快。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">SNEC</span> 光储盛会：液冷储能技术全面爆发</h2>
-<p>第十九届SNEC国际太阳能光伏与智慧能源大会暨展览会于6月3-5日在上海国家会展中心盛大举行。本届展会最大亮点是液冷储能技术的全面爆发——从电芯到系统，从工商业到户用，液冷方案已覆盖全场景。当行业从光伏和储能的简单叠加迈向"1+1>2"的高效融合，能够提供系统级解决方案的公司将主导下一代光储产业话语权。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">政策</span> 新型能源占比目标提至25%，风光装机突破12亿千瓦</h2>
-<p>国家发改委、能源局联合发布明确目标：2026年新型能源占一次能源消费比重提升至25%，光伏、风电装机量目标突破12亿千瓦。财政部同步出台户用光伏、新型储能、绿氢制备等项目的专项补贴政策，为新能源全产业链提供长效政策保障。截至2025年10月，我国风电和光伏总装机已突破60亿千瓦，占全球近一半。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">储能</span> 万亿储能赛道：从"配建"走向"独立商业化运营"</h2>
-<p>随着新能源装机规模持续攀升，系统调节能力和储能配套的需求日益紧迫。2026年储能行业呈现六大核心趋势：独立储能电站商业化运营提速、长时储能技术（液流电池、压缩空气）加速示范、工商业储能经济性凸显、电力现货市场为储能打开盈利空间、钠离子电池量产元年开启、储能安全标准全面升级。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">电池</span> 全球动力电池格局刷新，碳酸锂低位徘徊</h2>
-<p>全球动力电池格局持续演变，中国厂商市占率进一步巩固。碳酸锂价格在低位徘徊，为电池企业和新能源车企提供成本红利期。与此同时，固态电池、钠离子电池等下一代技术加速产业化进程，多家头部企业宣布2026-2027年量产计划。电池技术的多元化路线正在重塑产业链竞争格局。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">绿氢</span> 绿氢制备逼近经济性拐点，规模化应用提速</h2>
-<p>随着电解槽成本持续下降和可再生能源电价走低，绿氢制备成本正在逼近化石能源制氢的经济性拐点。财政部对绿氢制备项目的专项补贴进一步加速了这一进程。西北地区多个万吨级绿氢项目进入建设或投产阶段，绿氢在化工、冶金、交通等领域的替代应用从示范走向规模化。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">市场</span> 新能源板块回调后估值吸引力凸显</h2>
-<p>A股新能源板块近期经历调整，但多家券商认为调整后的估值已具备较高吸引力。储能细分板块获增量资金布局，光伏龙头经过产能出清后竞争格局改善。2026年新能源行业整体进入从"政策驱动"到"市场驱动"的切换期，具备成本优势和技术壁垒的龙头企业有望在行业整合中进一步扩大份额。</p>
-</div>
-
-</div>
-<div class="footer">
-由 <a href="https://github.com/xxy20010606/daily" target="_blank">WorkBuddy AI</a> 驱动 · 每日10:00自动更新 · <a href="history.html">历史存档</a>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon policy">📋</div>
+      <div class="section-name">政策与市场</div>
+      <div class="section-count">2 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index active">1</div>
+      <div class="news-body">
+        <div class="news-title">被健康家电「背刺」后，这届年轻人更会买了</div>
+        <div class="news-summary">那些年，我们交过的“健康”智商税 马上就要撞到墙了。 王焱的大脑还没反应过来，身体已经感觉到了一股推...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3873786445813001?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-index active">2</div>
+      <div class="news-body">
+        <div class="news-title">一折买 Miu Miu，谁在做奢侈品牌的&quot;拼多多&quot;？｜商业Friday</div>
+        <div class="news-summary">文｜贺哲馨 编辑｜乔芊 Judy第一次意识到，原来打折的奢侈品也有准入门槛，是在申请加入On The...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3867976058803459?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon market">🔗</div>
+      <div class="section-name">产业链动态</div>
+      <div class="section-count">2 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">3</div>
+      <div class="news-body">
+        <div class="news-title">36氪首发 | URTOPIA联创做了款智能指环，众筹已破千万元</div>
+        <div class="news-summary">作者&amp;nbsp;|&amp;nbsp;张子怡 编辑&amp;nbsp;|&amp;nbsp;袁斯来 近日，AI可穿戴品牌AI...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3873710996902912?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">4</div>
+      <div class="news-body">
+        <div class="news-title">Prosus全年生态系统收入增长57%</div>
+        <div class="news-summary">6月29日，Prosus公布截至2026年3月31日的2026财年业绩，公司生态系统（Ecosyst...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/newsflashes/3873887567123714?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon case">🏢</div>
+      <div class="section-name">企业动态</div>
+      <div class="section-count">1 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">5</div>
+      <div class="news-body">
+        <div class="news-title">中国卖家涌向拉美：高增长与合规门槛齐升丨最前线</div>
+        <div class="news-summary">作者丨欧雪 编辑丨袁斯来 6月26日，亚马逊全球开店在杭州宣布推出“拉美速通计划”，计划在2026年...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3873539789034501?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon pe">🌍</div>
+      <div class="section-name">投融资与出海</div>
+      <div class="section-count">2 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">6</div>
+      <div class="news-body">
+        <div class="news-title">36氪首发 | 海思、中兴团队创业，领域顶尖科学家加持，数字相控阵芯片厂商获厦门投资</div>
+        <div class="news-summary">作者&amp;nbsp;|&amp;nbsp;乔钰杰 编辑&amp;nbsp;|&amp;nbsp;袁斯来 硬氪获悉，广州宸思通讯科...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3873806295274756?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">7</div>
+      <div class="news-body">
+        <div class="news-title">36氪首发 | Ebike公司获Brizan Ventures、高秉强参与超数亿融资，要进军外骨骼市场</div>
+        <div class="news-summary">作者&amp;nbsp;|&amp;nbsp;张子怡 编辑&amp;nbsp;|&amp;nbsp;袁斯来 硬氪获悉，全球智能电助力...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3873706225751296?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="footer">由 <span>WorkBuddy AI</span> 自动整理 · 仅供参考<br>2026年06月29日 06:43 更新</div>
 </div>
 </body>
 </html>

@@ -2,89 +2,178 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI产业简报 - 2026年6月29日</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>🤖 AI 产业简报 · 2026年06月29日</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB",sans-serif;background:#f5f6fa;color:#2c3e50;line-height:1.6}
-.header{background:linear-gradient(135deg,#8e44ad,#6c3483);color:#fff;padding:28px 20px;text-align:center}
-.header h1{font-size:26px;margin-bottom:6px}
-.header span{font-size:14px;opacity:.85}
-.container{max-width:800px;margin:20px auto;padding:0 16px}
-.card{background:#fff;border-radius:12px;padding:20px 24px;margin-bottom:14px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-left:4px solid #8e44ad}
-.card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.1);transform:translateY(-1px);transition:all .2s}
-.card h2{font-size:17px;color:#6c3483;margin-bottom:8px}
-.card p{font-size:14px;color:#555}
-.tag{display:inline-block;background:#8e44ad;color:#fff;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:6px}
-.footer{text-align:center;padding:24px;font-size:12px;color:#999}
-.footer a{color:#8e44ad;text-decoration:none}
-.summary-box{background:linear-gradient(135deg,#faf5ff,#f3e8ff);border:1px solid #d4b8f0;border-radius:12px;padding:16px 20px;margin-bottom:18px}
-.summary-box h3{font-size:15px;color:#6c3483;margin-bottom:8px}
-.summary-box ul{list-style:none}
-.summary-box li{font-size:13px;color:#555;padding:3px 0;padding-left:16px;position:relative}
-.summary-box li::before{content:"▸";position:absolute;left:0;color:#8e44ad}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:#f5f6fa;color:#1a1a2e;line-height:1.7;padding:16px}
+.container{max-width:420px;margin:0 auto}
+.header{background:linear-gradient(135deg,#6c5ce7, #4a3cd4);border-radius:16px;padding:24px 20px 20px;color:#fff;margin-bottom:16px;position:relative;overflow:hidden}
+.header::after{content:"";position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:rgba(255,255,255,0.05);border-radius:50%}
+.header-date{font-size:12px;color:rgba(255,255,255,0.6);letter-spacing:1px;margin-bottom:6px}
+.header-title{font-size:22px;font-weight:700;letter-spacing:1px}
+.header-sub{font-size:13px;color:rgba(255,255,255,0.55);margin-top:6px}
+.header-tag{display:inline-block;background:rgba(255,255,255,0.15);border-radius:20px;padding:3px 10px;font-size:11px;color:rgba(255,255,255,0.8);margin-top:10px}
+.summary-card{background:#fff;border-radius:14px;padding:16px 18px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,0.05)}
+.summary-title{font-size:14px;font-weight:600;color:#1a1a2e;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.summary-title .dot{width:6px;height:6px;border-radius:50%;background:#6c5ce7;flex-shrink:0}
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.summary-item{background:#f8f9fc;border-radius:10px;padding:12px;text-align:center}
+.summary-num{font-size:22px;font-weight:700;color:#1a1a2e}
+.summary-label{font-size:11px;color:#888;margin-top:2px}
+.summary-item.red .summary-num{color:#e74c3c}
+.summary-item.blue .summary-num{color:#2980b9}
+.summary-item.green .summary-num{color:#27ae60}
+.summary-item.orange .summary-num{color:#e67e22}
+.section{background:#fff;border-radius:14px;margin-bottom:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.05)}
+.section-header{padding:14px 18px 10px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f0f5}
+.section-icon{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.section-icon.policy{background:#fff3e0}
+.section-icon.market{background:#e3f2fd}
+.section-icon.pe{background:#fce4ec}
+.section-icon.model{background:#ede7f6}
+.section-icon.app{background:#e8f5e9}
+.section-icon.capital{background:#fce4ec}
+.section-icon.tool{background:#e8f5e9}
+.section-icon.case{background:#e3f2fd}
+.section-icon.agent{background:#ede7f6}
+.section-icon.biz{background:#fff3e0}
+.section-name{font-size:15px;font-weight:700;color:#1a1a2e}
+.section-count{margin-left:auto;font-size:12px;color:#aaa}
+.news-item{padding:14px 18px;border-bottom:1px solid #f5f5fa;position:relative}
+.news-item:last-child{border-bottom:none}
+.news-index{position:absolute;left:18px;top:14px;width:20px;height:20px;border-radius:6px;background:#f0f0f5;font-size:11px;font-weight:700;color:#888;display:flex;align-items:center;justify-content:center}
+.news-index.active{background:#6c5ce7;color:#fff}
+.news-body{padding-left:30px}
+.news-title{font-size:14px;font-weight:600;color:#1a1a2e;line-height:1.5;margin-bottom:6px}
+.news-summary{font-size:12.5px;color:#666;line-height:1.6;margin-bottom:8px}
+.news-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.news-source{font-size:11px;color:#6c5ce7;background:rgba(108,92,231,108,92,231,0.1);border-radius:4px;padding:2px 7px}
+.news-link{font-size:11px;color:#aaa;text-decoration:none;word-break:break-all}
+.news-link:hover{color:#6c5ce7}
+.footer{text-align:center;padding:20px 0 30px;font-size:11px;color:#bbb}
+.footer span{color:#6c5ce7;font-weight:600}
 </style>
 </head>
 <body>
-<div class="header">
-<h1>🤖 每日AI产业简报</h1>
-<span>2026年6月29日 星期一</span>
-</div>
 <div class="container">
-
-<div class="summary-box">
-<h3>📌 今日速览</h3>
-<ul>
-<li>OpenAI发布首款自研AI芯片Jalapeño，联手博通9个月完成流片</li>
-<li>6月大模型格局大洗牌：Claude Fable 5登顶，国产三强Kimi/GLM/DeepSeek突围</li>
-<li>夏季达沃斯热议AI，"中国方案"成全场高频词</li>
-<li>越疆发布AI人形机器人，具身智能商业化加速</li>
-</ul>
+<div class="header">
+<div class="header-date">2026年06月29日</div>
+<div class="header-title">🤖 AI 产业简报</div>
+<div class="header-sub">大模型 · 智能体 · 具身智能 · 投融资</div>
+<div class="header-tag">由 WorkBuddy AI · GitHub Actions 自动整理</div>
+</div>
+<div class="summary-card">
+<div class="summary-title"><span class="dot"></span> 今日概览</div>
+<div class="summary-grid"><div class="summary-item red"><div class="summary-num">2</div><div class="summary-label">AI 产业政策与监管</div></div><div class="summary-item blue"><div class="summary-num">1</div><div class="summary-label">大模型最新进展</div></div><div class="summary-item green"><div class="summary-num">2</div><div class="summary-label">AI 应用与商业化</div></div><div class="summary-item orange"><div class="summary-num">2</div><div class="summary-label">投融资与资本动态</div></div></div>
 </div>
 
-<div class="card">
-<h2><span class="tag">芯片</span> OpenAI发布首款自研AI芯片"Jalapeño"</h2>
-<p>6月24日，OpenAI与博通（Broadcom）联合发布首款自研AI推理芯片Jalapeño（哈拉贝诺辣椒）。该芯片专为大语言模型推理设计，从设计到流片仅用九个月，早期测试显示每瓦性能大幅优于现有产品。OpenAI计划2026年底开始部署于千兆瓦级数据中心，标志着AI巨头从"买芯片"迈入"造芯片"时代，对英伟达的垄断格局形成直接挑战。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">模型</span> 6月大模型格局大洗牌：国产三强突围</h2>
-<p>2026年6月是AI大模型领域变化最密集的一个月。Anthropic发布Claude Fable 5、谷歌推出DiffusionGemma、月之暗面更新Kimi K2.7 Code、智谱发布GLM-5.2，一个旧的排行榜刚刚确立就被新发布打乱。国产模型在代码、推理、多模态等关键维度上快速追赶，DeepSeek持续颠覆性价比认知，全球大模型竞争进入"周更"模式。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">达沃斯</span> 夏季达沃斯论坛热议AI，"中国方案"高频出现</h2>
-<p>2026年夏季达沃斯论坛于6月24日在辽宁大连开幕，中国国务院总理李强出席开幕式并致辞。来自90余个国家和地区的约1800位政商领袖参会。本届年会以"规模化创新"为主题，AI规模化创新与产业落地成为全场热议焦点。论坛发布"能源转型指数""十大新兴技术"等权威报告，"中国方案"在多场专题对话中成为高频词。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">具身智能</span> 越疆发布下一代AI人形机器人，专为家庭场景</h2>
-<p>深圳市越疆科技（02432.HK）预告即将发布下一代陪伴交互AI人形机器人，搭载全栈自研"空弈DobotWAM"具身大模型。该产品专为家庭场景打造，具备理解人、适配人、服务人的全维度智能能力，标志着人形机器人从工商业场景向真实家庭场景的里程碑式跨越。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">机器人</span> AGIBOT亮相巴黎VivaTech，多机协同惊艳全场</h2>
-<p>全球具身智能领军企业AGIBOT于6月17日在VivaTech巴黎科技大会上全面展示具身智能机器人产品矩阵。现场演示了机器人在交互、运动、操作及多机协同方面的前沿能力。与此同时，鹿明机器人在全球权威零样本具身智能评测基准MolmoSpaces登顶，证明中国具身智能技术在全球已占据领先身位。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">算力</span> 国产AI芯片进入资本化元年，千亿IPO密集落地</h2>
-<p>随着AI算力需求爆发，国产AI芯片企业正迎来资本化窗口。2026年上半年，千亿元级IPO密集涌现，科创赛道迎来久违的蓬勃态势。CSP自研ASIC浪潮加速，CPU:GPU配比从1:4~1:8向1:1跃升，直接拉动服务器CPU需求激增。AI芯片与HBM技术发展成为半导体企业争夺的战略高地。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">投资</span> 创投圈重归活跃，九成资金流向AI与科技赛道</h2>
-<p>在6月10日至11日举办的2026投资界SuperLink大会上，清科集团创始人倪正东表示，2026年创投市场全面升温、迎来行业大年。AI产业基本面的可持续性已接近行业共识，但不少投资人提醒，AI高估值应区分看待，行业估值终将回归理性。从退出端来看，同样受益于AI赛道热度，创投机构迎来退出收获期。</p>
-</div>
-
-<div class="card">
-<h2><span class="tag">基础设施</span> MWC上海聚焦6G与AI融合，光互连成关键</h2>
-<p>随着AI训练与推理需求快速扩张，AI数据中心基础设施升级成为焦点。光互连被列为AI Factory扩张关键，CPO（共封装光学）技术预计2030年大规模应用。英伟达Spectrum-X交换机引入硅光子学解决大规模AI训练互连瓶颈，中国工信部也明确加强高端光电芯片、CPO等核心技术研发。</p>
-</div>
-
-</div>
-<div class="footer">
-由 <a href="https://github.com/xxy20010606/daily" target="_blank">WorkBuddy AI</a> 驱动 · 每日10:00自动更新 · <a href="history.html">历史存档</a>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon policy">📜</div>
+      <div class="section-name">AI 产业政策与监管</div>
+      <div class="section-count">2 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index active">1</div>
+      <div class="news-body">
+        <div class="news-title">被健康家电「背刺」后，这届年轻人更会买了</div>
+        <div class="news-summary">那些年，我们交过的“健康”智商税 马上就要撞到墙了。 王焱的大脑还没反应过来，身体已经感觉到了一股推...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3873786445813001?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-index active">2</div>
+      <div class="news-body">
+        <div class="news-title">36氪首发 | URTOPIA联创做了款智能指环，众筹已破千万元</div>
+        <div class="news-summary">作者&amp;nbsp;|&amp;nbsp;张子怡 编辑&amp;nbsp;|&amp;nbsp;袁斯来 近日，AI可穿戴品牌AI...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3873710996902912?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon model">🧠</div>
+      <div class="section-name">大模型最新进展</div>
+      <div class="section-count">1 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">3</div>
+      <div class="news-body">
+        <div class="news-title">马斯克：SpaceX计划今年每月发布一个全新的人工智能模型</div>
+        <div class="news-summary">当地时间周日（28日），马斯克在其社交媒体平台X上发文称，旗下最新一代大语言模型Grok 4.5已正...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/newsflashes/3873872147272963?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon app">🔧</div>
+      <div class="section-name">AI 应用与商业化</div>
+      <div class="section-count">2 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">4</div>
+      <div class="news-body">
+        <div class="news-title">8点1氪丨两大存储巨头今日发布大规模投资计划；江淮汽车股价腰斩，章建平9日套现近3亿元；Anthropic Fable 5有望很快恢复访问</div>
+        <div class="news-summary">今日热点导览 《给阿嬷的情书》总票房已突破19亿元 梁文锋署名，DeepSeek发布最新论文 WPS...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3873476968272902?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">5</div>
+      <div class="news-body">
+        <div class="news-title">Prosus全年生态系统收入增长57%</div>
+        <div class="news-summary">6月29日，Prosus公布截至2026年3月31日的2026财年业绩，公司生态系统（Ecosyst...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/newsflashes/3873887567123714?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon capital">💰</div>
+      <div class="section-name">投融资与资本动态</div>
+      <div class="section-count">2 条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">6</div>
+      <div class="news-body">
+        <div class="news-title">36氪首发 | 海思、中兴团队创业，领域顶尖科学家加持，数字相控阵芯片厂商获厦门投资</div>
+        <div class="news-summary">作者&amp;nbsp;|&amp;nbsp;乔钰杰 编辑&amp;nbsp;|&amp;nbsp;袁斯来 硬氪获悉，广州宸思通讯科...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3873806295274756?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-index ">7</div>
+      <div class="news-body">
+        <div class="news-title">36氪首发 | Ebike公司获Brizan Ventures、高秉强参与超数亿融资，要进军外骨骼市场</div>
+        <div class="news-summary">作者&amp;nbsp;|&amp;nbsp;张子怡 编辑&amp;nbsp;|&amp;nbsp;袁斯来 硬氪获悉，全球智能电助力...</div>
+        <div class="news-meta">
+          <span class="news-source">36氪</span>
+          <a class="news-link" href="https://36kr.com/p/3873706225751296?f=rss">查看原文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="footer">由 <span>WorkBuddy AI</span> 自动整理 · 仅供参考<br>2026年06月29日 06:43 更新</div>
 </div>
 </body>
 </html>
